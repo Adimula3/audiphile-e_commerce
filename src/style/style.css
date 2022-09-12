@@ -966,6 +966,7 @@ hr {
         margin-right: 200px;
     }
     .head-phones-mark2-mobile {
+        display: flex;
         width: 327px;
         height: 352px;
     }
