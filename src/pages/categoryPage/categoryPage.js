@@ -1,29 +1,32 @@
 import React, {useEffect, useState} from "react";
-import data from '../../data/data.json'
+import data from '../../data/data'
+import {useParams} from "react-router-dom";
 
-const CategoryPage = ({match}) => {
+const CategoryPage = () => {
 
     const [categoryItems, setCategoryItems] = useState([]);
+
+    const {category} = useParams();
 
     useEffect(() => {
         getCategory();
         window.scrollTo(0,0);
-    }, [match.params.category])
+    }, [category])
 
     const getCategory = () => {
 
-                const categoryList = data.filter(item => item.category === match.params.category).reverse();
-                setCategoryItems(categoryList)
+        const categoryList = data.filter(item => item.category === category).reverse();
 
+        setCategoryItems(categoryList)
+
+        console.log(categoryList);
 
     }
 
-
-
     return (
-      <div>
-          <h1>ok ok ok </h1>
-      </div>
-  );
+        <div>
+            <h1>ok ok ok </h1>
+        </div>
+    );
 }
 export default CategoryPage;
