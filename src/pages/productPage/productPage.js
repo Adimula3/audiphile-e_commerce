@@ -1,16 +1,12 @@
 import React, {useEffect, useState} from "react";
 import Header from "../../components/header";
 import '../productPage/productPage.css';
-import HeadPhones2 from '../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg'
 import {Col, Container, Row} from "react-bootstrap";
 import {Link, useParams} from "react-router-dom";
 import data from '../../data/data'
 import Shop from "../shop/shop";
 import ProductDetails from "../productDetails/productDetails";
 import Footer from "../../components/footer";
-import g1 from '../../assets/product-yx1-earphones/desktop/image-gallery-1.jpg';
-import g2 from '../../assets/product-yx1-earphones/desktop/image-gallery-2.jpg';
-import g3 from '../../assets/product-yx1-earphones/desktop/image-gallery-3.jpg';
 
 
 const ProductPage = () => {
