@@ -4,6 +4,7 @@ import logo from "../assets/shared/desktop/logo.svg";
 import Twitter from '../assets/shared/desktop/icon-twitter.svg'
 import Facebook from '../assets/shared/desktop/icon-facebook.svg'
 import Instagram from '../assets/shared/desktop/icon-instagram.svg'
+import '../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg'
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
                           <NavLink to="/headphones" className="nav-link">HEADPHONES</NavLink>
                       </li>
                       <li className="nav-item">
-                          <NavLink to="/speaker" className="nav-link">SPEAKER</NavLink>
+                          <NavLink to="/speakers" className="nav-link">SPEAKER</NavLink>
                       </li>
                       <li className="nav-item">
                           <NavLink to="/earphones" className="nav-link">EARPHONES</NavLink>

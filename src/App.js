@@ -1,9 +1,6 @@
 import './App.css';
 import Home from "./pages/home";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Headphones from "./pages/headphones";
-import Speakers from "./pages/speakers";
-import Earphones from "./pages/earphones";
 import ProductPage from "./pages/productPage/productPage";
 import CategoryPage from "./pages/categoryPage/categoryPage";
 
@@ -13,9 +10,8 @@ function App() {
      <BrowserRouter>
          <Routes>
              <Route path="/" element={<Home />} />
-             <Route path="speaker" element={<Speakers />} />
-             <Route path="earphones" element={<Earphones />} />
              <Route path="/:category" element={<CategoryPage />} />
+             <Route path='/:category/:product' element={<ProductPage />} />
          </Routes>
      </BrowserRouter>
     </div>
